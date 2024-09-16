@@ -1,6 +1,6 @@
 <template>
 
-
+<div class="search-container">
     <div class="container flex-center">
                 <form class="form-search flex-center">
                     <div class="search-label">
@@ -20,6 +20,7 @@
                 </form>
     </div>
 
+</div>
 
 </template>
 
@@ -29,6 +30,42 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+.form-search {
+    width: 100%;
+    max-width: 850px;
+}
+
+.search-label {
+    width: 100%;
+    max-width: 500px;
+    height: 44px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 35px;
+}
+
+.search-submit {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    width: 22px;
+    height: 22px;
+}
+
+.search-container {
+    margin-bottom: 20px; /* Добавьте отступ снизу для разделения с карточками */
+}
 
 </style>
