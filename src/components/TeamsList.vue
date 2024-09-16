@@ -5,21 +5,21 @@
       <template v-for="team in paginatedTeams" :key="team.id">
           <div class="card" @click="openTeamCalendar(team.id)">
               <div class="innerCard">
-                  <!-- <template v-for="team in teams" :key="team.id"> -->
+                
                       <router-link :to="{ name: 'TeamCalendar', params: { id: team.id }}" class="cardLink">
-                          <!-- <div class="container"> -->
+                        
 
-                          <!-- <div class="leagues-list"> -->
+                          
                                   <div class="league">
                                       <h2 @click="goToCalendar(team.id)" class="leagues-title-name">{{team.name}}</h2>
                                       <img :src="team.emblem" alt="image" class="leagueImage">
                                       
                                   </div>
-                          <!-- </div> -->
+                          
 
-                          <!-- </div> -->
+                        
                       </router-link>
-                  <!-- </template> -->
+                  
 
               </div>
           </div>
@@ -38,13 +38,11 @@
 <script>
 import axios from 'axios';
 
-// import getTeamList from '../team.js';
-import SearchBar from './SearchBar.vue'; // Импортируйте компонент SearchBar
-import Pagination from './Pagination.vue'; // Импортируйте компонент Pagination
 
-  // const teamlist = getTeamList();
-  // console.log(teamlist);
-  // const teams = teamlist.teams;
+import SearchBar from './SearchBar.vue'; 
+import Pagination from './Pagination.vue'; 
+
+  
 
   export default {
       components: {
@@ -84,7 +82,7 @@ import Pagination from './Pagination.vue'; // Импортируйте комп�
     try {
       const response = await axios.get('https://api.football-data.org/v4/teams', {
         headers: {
-          'X-Auth-Token':  import.meta.env.VITE_API_KEY //'759ad70c2c5d43839b5ec4849e9f9251'  // Ваш API ключ
+          'X-Auth-Token':  import.meta.env.VITE_API_KEY  
         }
       });
       this.teams = response.data.teams.map(team => ({

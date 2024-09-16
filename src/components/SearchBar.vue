@@ -48,22 +48,13 @@ export default {
     border-radius: 22px;
     padding-left: 20px;
     padding-right: 35px;
-    font-size: 20px; /* Увеличьте размер шрифта здесь */
+    font-size: 20px; /* Увеличить размер шрифта здесь */
 }
 
-/* .search-submit {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    width: 22px;
-    height: 22px;
-} */
+
 
 .search-container {
-    margin-bottom: 20px; /* Добавьте отступ снизу для разделения с карточками */
+    margin-bottom: 20px; /* Добавить отступ снизу для разделения с карточками */
 }
 
 </style>

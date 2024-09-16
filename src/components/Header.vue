@@ -5,14 +5,14 @@
     <div class="header-box">
         <router-link to="/" class="header-logo logo">
         <img src="../assets/images/image logo.png" alt="logo">
-         
+        
         </router-link>
         
         <div class="header-controls">
             <router-link to="/" class="header-logo logo">
                 <button class="btn btn-outline" id="cart-button">
                     
-                  <h3>Лиги </h3>  
+                <h3>Лиги </h3>  
                 </button>
             </router-link>
             <router-link to="/teams" class="header-logo logo">
@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-   
+
 
 </script>
 

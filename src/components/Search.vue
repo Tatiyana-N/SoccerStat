@@ -65,7 +65,7 @@ export default {
 }
 
 .search-container {
-    margin-bottom: 20px; /* Добавьте отступ снизу для разделения с карточками */
+    margin-bottom: 20px; /*  отступ снизу для разделения с карточками */
 }
 
 </style>

@@ -26,7 +26,7 @@
 
                                 <tr template v-for="teammatch in paginatedTeammatchs" :key="teammatch.id" class="tableLine">
 
-                                    <!-- <tr class="tableLine"> -->
+                                   
                                     <td class="date">
                                         {{ formatDate(teammatch.utcDate) }}
 
@@ -119,10 +119,7 @@ export default {
             return Math.ceil(this.filteredTeammatchs.length / this.itemsPerPage);
         }
 
-    // async created() {
-    //     const teamId = this.$route.params.id;
-    //     this.teammatchs = await getTeammatchList(teamId);
-    //     console.log("teammatchlist= ", this.teammatchs);        
+          
     
     },
 
@@ -145,9 +142,7 @@ export default {
         },
 
 
-        // onPageChange(newPage) {
-        // this.activePage = newPage;
-        // },
+    
 
         formatDate(dateString) {
             const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
@@ -159,11 +154,7 @@ export default {
         },
     },
 
-    // async created() {
-    //     const teamId = this.$route.params.id;
-    //     this.teammatchs = await getTeammatchList(teamId);
-    //     console.log("teammatchlist= ", this.teammatchs);        
-    // },
+    
 
         onPageChange(newPage) {
             console.log("Changing to page:", page);

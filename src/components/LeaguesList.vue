@@ -6,21 +6,19 @@
         <div class="card" @click="openLeagueCalendar(league.id)">
             
             <div class="innerCard">
-                <!-- <template v-for="group in paginatedGroups" :key="group.id"> -->
+                
                     <router-link :to="{ name: 'LeagueCalendar', params: { id: league.id }}" class="cardLink">
                         
-                            
-                                <!-- <div class="container"> -->
                                     <div class="league">
                                         <img :src="league.emblem" alt="image" class="leagueImage">
                                         <h4 @click="goToCalendar(league.id)" class="leagues-title">{{league.name}}</h4>
                                         <h4 class="leagues-title">{{league.country}}</h4>
                                         
                                     </div>
-                                <!-- </div> -->
+                                
                         
                     </router-link>
-                <!-- </template> -->
+               
             </div >
 
             
@@ -41,13 +39,11 @@
 
 <script>
     import axios from 'axios';
-    // import getLeagueList from '@/league.js';
-    import SearchBar from './SearchBar.vue'; // Импортируйте компонент SearchBar
-    import Pagination from './Pagination.vue'; // Импортируйте компонент Pagination
+   
+    import SearchBar from './SearchBar.vue'; 
+    import Pagination from './Pagination.vue'; 
 
-    // const leaguelist = getLeagueList();
-    // console.log(leaguelist);
-    // const leagues = leaguelist.leagues;
+    
 
     export default {
             components: {
@@ -63,9 +59,7 @@
                     itemsPerPage: 10
                 };
             },
-            // created() {
-            // this.fetchLeagues();
-            // },
+            
                 computed: {
         filteredLeagues() {
         

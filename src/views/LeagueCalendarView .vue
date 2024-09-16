@@ -21,7 +21,7 @@
 <script>
 
 import LeagueCalendar from '@/components/LeagueCalendar.vue';
-// import getLeagueName from '../datasources/leagues.js';
+
 import {getLeagueName} from '../datasources/leaguecalendar.js';
 
 
@@ -65,12 +65,5 @@ export default {
 
 
 <style scoped>
-/* .breadCrumbs {
-        display: flex;
-        margin-top: 5px;
-}
 
-.breadCrumbs>div {
-        margin-left: 5px;
-} */
 </style>

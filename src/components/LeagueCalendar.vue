@@ -4,7 +4,7 @@
     <div class="leagues-wrapper" id="rests-container">
 
 
-        <!-- <div class="container"> -->
+     
 
             <div class="leagues-list">
                 <div class="leagues-item">
@@ -34,7 +34,7 @@
                                     class="tableLine">
 
 
-                                    <!-- <tr class="tableLine"> -->
+                                    
 
                                     <td class="date">
                                         {{ formatDate(leaguematch.utcDate) }}
@@ -76,7 +76,7 @@
         </div>
 
 
-    <!-- </div> -->
+
     <Pagination :active-page="activePage" :total-items="leaguematchs.length" :items-per-page="itemsPerPage"
         @page-changed="onPageChange" />
 
@@ -85,7 +85,7 @@
 
 <script>
 
-import Pagination from './Pagination.vue'; // Импортируйте компонент Pagination
+import Pagination from './Pagination.vue'; 
 import {getLeaguematchList} from '../datasources/leaguecalendar.js';
 
 
@@ -162,11 +162,7 @@ export default {
 
 
 
-    // async created() {
-    //     const leagueId = this.$route.params.id;
-    //     this.leaguematchs = await getLeaguematchList(leagueId);
-    //     console.log("leaguematchlist= ", this.leaguematchs);        
-    // },
+
 
     onPageChange(newPage) {
         console.log("Changing to page:", page);
