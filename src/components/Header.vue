@@ -5,20 +5,20 @@
     <div class="header-box">
         <router-link to="/" class="header-logo logo">
         <img src="../assets/images/image logo.png" alt="logo">
-
+         
         </router-link>
         
         <div class="header-controls">
             <router-link to="/" class="header-logo logo">
                 <button class="btn btn-outline" id="cart-button">
                     
-                    Лиги
+                  <h3>Лиги </h3>  
                 </button>
             </router-link>
             <router-link to="/teams" class="header-logo logo">
                 <button class="btn btn-outline" id="cart-button">
                     
-                    Команды
+                    <h3>Команды </h3>  
                 </button>
             </router-link>
 
@@ -71,7 +71,7 @@ gap: 10px;
 }
 
 .btn-outline {
-    border-radius: 2px;
+    border-radius: 22px;
     border: 1px solid #D9D9D9;
     background: #FFF;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.00);

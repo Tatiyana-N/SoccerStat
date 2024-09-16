@@ -10,24 +10,34 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      name:'Home',
+      component: HomeView
+    },
+    {
+      path: '/leagues',
+      name:'LeaguesList',
       component: HomeView
     },
     {
       path: '/teams',
+      name:'TeamsList',
       component: TeamsView
     },
-
     {
-      path: '/teamcalendar',
-      component: TeamCalendarView
+      path: '/teams/:id/calendar',
+      name:'TeamCalendar',
+      component: TeamCalendarView,
+      
     },
-
     {
-      path: '/leaguecalendar',
+      path: '/leagues/:id/calendar',
+      name:'LeagueCalendar',
       component: LeagueCalendarView
     },
 
   ]
-})
 
-export default router
+
+});
+
+export default router;

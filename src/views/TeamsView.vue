@@ -2,7 +2,7 @@
 // ввызов функции коттрая вернет список данных  о лиге название 
 
 import TeamsList from '../components/TeamsList.vue';
-import Search  from '../components/Search.vue';
+// import Search  from '../components/Search.vue';
 
 
 </script>
@@ -10,7 +10,7 @@ import Search  from '../components/Search.vue';
 <template>
 
 
-        <Search />
+        <!-- <Search /> -->
 
         <TeamsList /> 
 
