@@ -1,13 +1,13 @@
 <template>
 <div class="searchBar">
-     с 
+    с 
     <input
         type="date"
         class="dateInput"
         v-model="startDate"
         @change="updateDateRange"
     />
-     по 
+    по 
     <input
         type="date"
         class="dateInput"
